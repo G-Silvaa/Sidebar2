@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
 :root{
     --color-white: #fff;
     --color-dark1: #272727;
@@ -5,7 +8,7 @@
     --color-dark3: #414141;
     --color-dark4: #1c1c1c;
     --color-dark5: #343434;
-    --color-purple: #b040ff;
+    --color-purple: rgb(196, 188, 188);
 }
 
 *{
@@ -13,6 +16,7 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
+    font-family: 'Poppins';
 }
 
 body{
@@ -21,8 +25,12 @@ body{
 }
 
 .imgLogo{
-    width: 45px;
-    
+    width: 120px;
+}
+
+.bi-box-arrow-in-right{
+    margin-left: 10px;
+    color: var(--color-purple);
 }
 
 .header{
@@ -42,12 +50,29 @@ body{
     gap: 40px;
 }
 
+.navigation-header a:hover{
+    color: white;
+    transition: 0.5s ease-out;
+    font-size: 18px;
+}
+
 .navigation-header a{
     text-decoration: none;
     color: var(--color-purple);
     font-weight: bold;
     
 }
+
+.entrar {
+    border:1px solid var(--color-purple);
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 
 .active{
     background-color: var(--color-dark3);
@@ -71,6 +96,42 @@ body{
     z-index: 90;
 }
 
+.two-header{
+background:var(--color-dark4);
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 100px;
+height: 40px;
+
+}
+
+.two-header a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-purple);
+}
+
+.two-header a:hover{
+    color: white;
+    transition: 0.5s ease-out;
+    font-size: 18px;
+}
+
+.container{
+    background-image: url(./images/esportes-de-adição-ouro-apostam-em-fundo-com-bola-futebol-e-estádio-apostas-desportivas-esporte-161466199.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    opacity: 0.7;
+    
+    
+}
+
+.container h1 {
+    font-size: 50px;
+    color: #ccc2c2;
+}
+
 
 @media screen and (max-width: 768px){
     .btn_icon_header{
@@ -89,6 +150,7 @@ body{
         animation: 1s;
         left: -500px;
         margin-top: 58px;
+        z-index: 90;
         
     }
 
@@ -97,8 +159,23 @@ body{
         animation: sim 0.5s;
         
     }
- 
 
+    .two-header{
+        gap: 20px;
+    }
+
+    .container{
+        background-image: url(./images/aplicativo-de-casa-de-apostas-esportiva-com-bola-de-futebol-e-smartphone-no-fundo-do-estadio-d_236999-559.avif);
+        background-repeat: no-repeat;
+        background-size:cover;
+        opacity: 0.7;
+        
+    }
+    .container h1 {
+        font-size: 20px;
+        color: #ccc2c2;
+    }
+   
 }
 
 @keyframes sim {
@@ -106,5 +183,6 @@ body{
     opacity: 0; }
     to {left: 0; 
     opacity: 1;}
+    
 }
 
