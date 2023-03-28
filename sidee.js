@@ -10,3 +10,15 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu)
 
+var menuItem = document.querySelectorAll('.two-header')
+
+function selectL(){
+    menuItem.forEach((item)=>
+    item.classList.remove('cor')
+    )
+    this.classList.add('cor')
+}
+
+menuItem.forEach((item)=>
+item.addEventListener('click', selectL))
+
